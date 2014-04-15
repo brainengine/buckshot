@@ -1,0 +1,14 @@
+<apex:page controller="TestServiceClass">
+
+	<apex:form >
+		BrainEngine License Test Service<br/><br/><br/>
+		
+		<!-- <apex:inputText value="{!json}" id="txtJson" label="JSON"></apex:inputText><br/><br/><br/> -->
+		<apex:inputText value="{!url}" id="txtUrl" label="URL"></apex:inputText><br/><br/><br/>
+		<apex:inputTextArea value="{!msg}" rows="20" label="JSON" id="txtJson"></apex:inputTextArea>
+		
+		<apex:outputText value="{!logMessage}" id="message"></apex:outputText><br/><br/><br/>
+		<apex:commandButton action="{!TestService}" value="save" reRender="message"/>
+		
+	</apex:form>
+</apex:page>
